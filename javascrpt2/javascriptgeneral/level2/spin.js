@@ -1,7 +1,5 @@
 function spinalCase(str) {
-    return str.split(/(?=[A-Z])/).r // positive lookahead to keep the capital letters
-
-        .join("-").toLowerCase();
+    return str.split(/\s|_|(?=[A-Z])/).join("-").toLowerCase();
 }
 
 let a = spinalCase('This Is Spina Tap');

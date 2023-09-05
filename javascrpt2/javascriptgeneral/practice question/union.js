@@ -6,4 +6,4 @@ console.log(unionArr.sort(function (a, b) {
 }));
 
 let c = [...new Set(unionArr)];
-console.log(c)
+console.log("hh"+c)
